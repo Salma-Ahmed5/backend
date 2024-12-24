@@ -3,7 +3,10 @@ const express = require("express");
 const app= express()  //bi3ml web server 
 const cors = require('cors');
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://frontend-git-salma-ahmed-dev.apps.rm3.wse.p1.openshiftapps.com',
+}));
+
 
 const User = require("./DataBase/User");
 
