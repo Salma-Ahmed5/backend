@@ -13,7 +13,7 @@ const order = require("./DataBase/order");
 const mongoose = require("mongoose");
 
 
-const mongoURI = process.env.MONGO_URI || "mongodb://mongo:27017/mydatabase";
+const mongoURI = process.env.MONGO_URI || "mongodb://mongo-salma-ahmed-dev.apps.rm3.7wse.p1.openshiftapps.com:27017/mydatabase";
 app.get('/', (req, res) => {
   res.send('Hello from the backend!');
 });
